@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Винни</title>
+<style type="text/css">
+	html {
+		background-image: radial-gradient(circle,red,blue);
+		color: white;
+	}
+	h1 , h2 {
+		color: white;
+		text-align: center;
+		text-shadow: 4px -4px 3px rgba(0,0,0,0.8);
+	}
+	img {
+		max-width: 100%;
+		
+	}
+	.f1 { background-image: url("img/f1.jpg");}
+	.f2 { background-image: url("img/f2.jpg");}
+	.f3 { background-image: url("img/f3.jpg");}
+	.f4 { background-image: url("img/f4.jpg");}
+	.f5 { background-image: url("img/f5.jpg");}
+	.f6 { background-image: url("img/f6.jpg");}
+	.f7 { background-image: url("img/f7.jpg");}
+	.f8 { background-image: url("img/f8.jpg");}
+	.f9 { background-image: url("img/f9.jpg");}
+	.f10 { background-image: url("img/f10.jpg");}
+	.f11 { background-image: url("img/f11.jpg");}
+	.f12 { background-image: url("img/f12.jpg");}
+	.f13 { background-image: url("img/f13.jpg");}
+	.f14 { background-image: url("img/f14.jpg");}
+	.f15 { background-image: url("img/f15.jpg");}
+	.f16 { background-image: url("img/f16.jpg");}
+	.f17 { background-image: url("img/f17.jpg");}
+	.f18 { background-image: url("img/f18.jpg");}
+
+	.button{
+		border-radius: 5px;
+	}
+	table {
+		width: 800px;
+		max-height: 400px;
+		background-image: url("img/f1.jpg")	;
+		background-size: cover;
+		background-position: center center;
+		margin: 0;
+		border 0;
+	}
+	td {
+		width: 24%;
+		margin: 0;
+		border-width: 0px;
+	}
+	td.zero {
+		width: 1%;
+
+		}
+	tr {
+		margin: 0;
+		border-width: 0;
+	}
+</style>
+
+</head>
+<body>
+
+
+<h1>Винни</h1><h2>игра для детей </h2>
+
+<table id="main_table" class="f1">
+
+	<tr>
+		<td class="zero"> <img src="img/k.jpg"> </td>
+		<td >		
+			<img id="a01" src="img/k_apple.jpg"  alt=""
+				onclick="this.src=a1.click(this)"
+				>	
+		</td>	
+		<td >		
+			<img id="b01" src="img/k_apple.jpg" alt=""
+			onclick="this.src=b1.click(this)"
+			>	
+		</td>	
+		<td >		
+			<img id="c01" src="img/k_apple.jpg" alt=""
+			onclick="this.src=c1.click(this)"
+			>	
+		</td>	
+		<td >		
+			<img id="d01" src="img/k_apple.jpg" alt=""
+			onclick="this.src=d1.click(this)"
+			>	
+		</td>	
+
+	</tr>	
+	<tr>
+		<td class="zero" > <img src="img/k.jpg"> </td>
+		<td >		
+			<img id="a02" src="img/k_apple.jpg" alt=""
+			onclick="this.src=a2.click(this)"
+			>	
+		</td>	
+		<td >		
+			<img id="b02" src="img/k_apple.jpg" alt=""
+			onclick="this.src=b2.click(this)"
+			>	
+		</td>	
+		<td >		
+			<img id="c02" src="img/k_apple.jpg" alt=""
+			onclick="this.src=c2.click(this)"
+			>	
+		</td>	
+		<td >		
+			<img id="d02" src="img/k_apple.jpg" alt=""
+			onclick="this.src=d2.click(this)"
+			>	
+		</td>	
+
+	</tr>
+<!--	<tr>
+		<td class="zero" > <img src="img/k.jpg"> </td>
+		<td >		
+			<img id="a03" src="img/k_apple.jpg" alt=""
+			onclick="this.src=a3.click(this)"
+			>	
+		</td>	
+		<td >		
+			<img id="b03" src="img/k_apple.jpg" alt=""
+			onclick="this.src=b3.click(this)"
+			>	
+		</td>	
+		<td >		
+			<img id="c03" src="img/k_apple.jpg" alt=""
+			onclick="this.src=c3.click(this)"
+			>	
+		</td>	
+	
+	</tr>	
+-->
+</table>
+<p></p>
+<audio id="aud"  src="mus/1.ogg">
+		</audio>
+<script src="src/game.js" type="text/javascript" defer="defer" >
+
+</script>
+<p></p>
+<div>
+	<fieldset>
+				<legend class="button"><b>Звук</b></legend>
+	<input type="button" onclick="stop_mus()"
+			value="Звук отключить " class="button">   
+	<label for="sound">Включить звук </label>
+			<input type="checkbox" id="sound" checked="checked">						
+	</fieldset>
+</div>
+</body>
+</html>
